@@ -1,0 +1,511 @@
+{
+  "datahub": {
+    "created": "2018-06-27T15:33:18.285699",
+    "findability": "published",
+    "flowid": "five-thirty-eight/bachelorette/7",
+    "hash": "51acb72787780d1cb9aca34b890501e7",
+    "modified": "2018-06-28T13:13:02.772287",
+    "owner": "five-thirty-eight",
+    "ownerid": "five-thirty-eight",
+    "stats": {
+      "bytes": 571655,
+      "rowcount": 921
+    }
+  },
+  "description": "# Bachelorette / Bachelor\r\n\r\nThis folder contains the data behind the stories:\r\n\r\n- [How To Spot A F",
+  "id": "five-thirty-eight/bachelorette",
+  "licenses": [
+    {
+      "name": "ODC-PDDL",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License"
+    }
+  ],
+  "name": "bachelorette",
+  "readme": "# Bachelorette / Bachelor\r\n\r\nThis folder contains the data behind the stories:\r\n\r\n- [How To Spot A Front-Runner On The ‘Bachelor’ Or ‘Bachelorette’](https://fivethirtyeight.com/features/the-bachelorette/)\r\n- [Rachel’s Season Is Fitting Neatly Into ‘Bachelorette’ History](https://fivethirtyeight.com/features/rachels-season-is-fitting-neatly-into-bachelorette-history/)\r\n- [Rachel Lindsay’s ‘Bachelorette’ Season, In Three Charts](https://fivethirtyeight.com/features/rachel-lindsays-bachelorette-season-in-three-charts/)\r\n\r\nData was scraped from the [Bachelor Nation Wiki](http://bachelor-nation.wikia.com/wiki/Bachelor_Nation_Wikia) and then missing seasons were filled in by ABC and FiveThirtyEight staffers.\r\n\r\nHeader          | Description\r\n----------------|------------\r\n`SHOW`          | Bachelor or Bachelorette\r\n`SEASON`        | Which season\r\n`CONTESTANT`    | An identifier for the contestant in a given season\r\n`ELIMINATION-1` | Who was eliminated in week 1\r\n`ELIMINATION-2` | Who was eliminated in week 2\r\n`ELIMINATION-3` | Who was eliminated in week 3\r\n`ELIMINATION-4` | Who was eliminated in week 4\r\n`ELIMINATION-5` | Who was eliminated in week 5\r\n`ELIMINATION-6` | Who was eliminated in week 6\r\n`ELIMINATION-7` | Who was eliminated in week 7\r\n`ELIMINATION-8` | Who was eliminated in week 8\r\n`ELIMINATION-9` | Who was eliminated in week 9\r\n`ELIMINATION-10`| Who was eliminated in week 10\r\n`DATES-1`       | Who was on which date in week 1\r\n`DATES-2`       | Who was on which date in week 2\r\n`DATES-3`       | Who was on which date in week 3\r\n`DATES-4`       | Who was on which date in week 4\r\n`DATES-5`       | Who was on which date in week 5\r\n`DATES-6`       | Who was on which date in week 6\r\n`DATES-7`       | Who was on which date in week 7\r\n`DATES-8`       | Who was on which date in week 8\r\n`DATES-9`       | Who was on which date in week 9\r\n`DATES-10`      | Who was on which date in week 10\r\n\r\n- Eliminates connote either an elimination (starts with E) or a rose (starts with R).\r\n- Eliminations supercede roses.\r\n- E connotes a standard elimination, typically at a rose ceremony. EQ means the contestant quits. EF means the contestant was fired by production. ED connotes a date elimination. EU connotes an unscheduled elimination, one that takes place at a time outside of a date or rose ceremony.\r\n- R means the contestant received a rose. R1 means the contestant got a first impression rose.\r\n- D1 means a one-on-one date, D2 means a 2-on-1, D3 means a 3-on-1 group date, and so on.\r\n- Weeks of the show are deliminated by rose ceremonies, and may not line up exactly with episodes.\r\n\r\nThis dataset was scraped from [FiveThirtyEight - bachelorette](https://github.com/fivethirtyeight/data/tree/master/bachelorette)",
+  "resources": [
+    {
+      "bytes": 9616,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "validation_report.json",
+      "format": "json",
+      "hash": "9d404fb845645a3480476e947abcfe15",
+      "name": "validation_report",
+      "path": "https://pkgstore.datahub.io/five-thirty-eight/bachelorette/validation_report/data/9d404fb845645a3480476e947abcfe15/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 48889,
+      "datahub": {
+        "derivedFrom": [
+          "bachelorette"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/10fbac7bbad9fed5cf160b9aea31b5d1.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "f7b0d68b5e09a11282e421f502154888",
+      "mediatype": "text/csv",
+      "name": "bachelorette_csv",
+      "path": "https://pkgstore.datahub.io/five-thirty-eight/bachelorette/bachelorette_csv/data/f7b0d68b5e09a11282e421f502154888/bachelorette_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 921,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "show",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "season",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "contestant",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-1",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-4",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-5",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-6",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-7",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-8",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-9",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-10",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-1",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-4",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-5",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-6",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-7",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-8",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-9",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-10",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 430507,
+      "datahub": {
+        "derivedFrom": [
+          "bachelorette"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/10fbac7bbad9fed5cf160b9aea31b5d1.csv",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "3f927fd02daef86ec3822fc170b455ab",
+      "mediatype": "text/csv",
+      "name": "bachelorette_json",
+      "path": "https://pkgstore.datahub.io/five-thirty-eight/bachelorette/bachelorette_json/data/3f927fd02daef86ec3822fc170b455ab/bachelorette_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 921,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "show",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "season",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "contestant",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-1",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-4",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-5",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-6",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-7",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-8",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-9",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-10",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-1",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-4",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-5",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-6",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-7",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-8",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-9",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-10",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 34677,
+      "datahub": {
+        "type": "derived/zip"
+      },
+      "description": "Compressed versions of dataset. Includes normalized CSV and JSON data with original data and datapackage.json.",
+      "dpp:streamedFrom": "/tmp/760.bachelorette.zip",
+      "format": "zip",
+      "name": "bachelorette_zip",
+      "path": "https://pkgstore.datahub.io/five-thirty-eight/bachelorette/bachelorette_zip/data/f87776946b2c10ba347f035384bdb39c/bachelorette_zip.zip",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 47966,
+      "datahub": {
+        "type": "source/tabular"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/10fbac7bbad9fed5cf160b9aea31b5d1.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "bachelorette",
+      "path": "https://pkgstore.datahub.io/five-thirty-eight/bachelorette/bachelorette/archive/10fbac7bbad9fed5cf160b9aea31b5d1/bachelorette.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "show",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "season",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "contestant",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-1",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-4",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-5",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-6",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-7",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-8",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-9",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "elimination-10",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-1",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-2",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-3",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-4",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-5",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-6",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-7",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-8",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-9",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "dates-10",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    }
+  ],
+  "title": "Bachelorette",
+  "views": [
+    {
+      "datahub": {
+        "type": "preview"
+      },
+      "name": "datahub-preview-bachelorette_csv_preview",
+      "resources": [
+        "bachelorette"
+      ],
+      "specType": "table",
+      "transform": {
+        "limit": 2000
+      }
+    }
+  ]
+}
